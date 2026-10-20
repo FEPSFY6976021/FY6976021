@@ -74,7 +74,10 @@ Charlie's intro section
 Charlie's analysis one section
     </pre>
 
-
+<h3 id="Analysis2">Analysis2</h3>
+    <pre id="Analysis2_InText">
+Charlie's analysis one section
+    </pre>
 
 
 
@@ -160,8 +163,9 @@ Charlie's analysis one section
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const Analysis2Count = displayWordCount("Analysis2_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount+Analysis2Count;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
