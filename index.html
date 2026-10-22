@@ -43,6 +43,9 @@
             <th><h3>Content</h3></th>
         </tr>
         <tr>
+            <td><a href="#Abstract">Abstract</td>
+        </tr
+        <tr>
             <td><a href="#Introduction">Introduction</td>
         </tr>
         <tr>
@@ -57,27 +60,24 @@
     <hr>
 
     <h3 id="Abstract">Abstract</h3>
-    <pre>
-hello my name is charlie charlie charlie charlie charlie charlie charlie charlie charlie charlie charlie charlie charlie charlie
+    <pre id="Abstract_InText">
+one
     </pre>
 
     <h3 id="Introduction">Introduction</h3>
     <pre id="Introduction_InText">
-Charlie's intro section
+two two
     </pre>
 
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
     <pre id="Analysis_InText">
-Charlie's analysis one section
+three three three
     </pre>
 
-<h3 id="Analysis2">Analysis2</h3>
-    <pre id="Analysis2_InText">
-Charlie's analysis one section
+<h3 id="Reference">Reference</h3>
+    <pre id="Reference_InText">
+four four four four
     </pre>
-
-
-
 
 
 
@@ -158,9 +158,10 @@ Charlie's analysis one section
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
+    const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
-    const Analysis2Count = displayWordCount("Analysis2_InText");
+    const ReferenceCount = displayWordCount("Reference_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount+Analysis2Count;
     // Display the total word count
