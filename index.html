@@ -71,11 +71,21 @@ two two
 
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
     <pre id="Analysis_InText">
-three three three
+erosion
+As bridges are made to be able to hold a large sum of weight, the pillars what are the main support of the bridges must be very durable to be able to maintain its strength and withstand erosion caused by the movement or sediment in the water. The most common reasons bridges fail is due to the scouring. Scouring is the removal of sediment from the banks of the floor and It can have huge effects of bridges structural integrity. A recent example of a bridge that collapses due to scouring is the Tadcaster bridge in North Yorkshire. There are 3 types: local, contractional and long-term. 
+
+Local scour is the removal of around the pillar caused by accelerated water forming vortices patterns when contacting the pillars. This creates a powerful current that can expose the base foundations of the pillars.
+
+Contractional scours are more for bridges over a river that has fast moving water going through it. The fast-moving water goes from a wide flow area to a smaller one which creates more pressure and removes more ground sediment.
+
+Long-term scour is the gradual long-term lowering of banks rivers natural dynamics, human activities and stream changes. It slowly changes the depth of coverage that the sediment provides and exposes the foundations to get damaged. 
+
+Due to these issues, engineers must build measures to prevent these factors creating a major structural issue. They can do this is numerous ways, examples being added physical barriers, flow modifications to redirect the rivers energy and built in preventions like deep driven foundations that pass the calculated potential scour depth.
+
     </pre>
 
 <head>
-<title>My Daily Activities</title>
+<title>The percentage effects of each type of scours</title>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <div id="chart_div"></div>
@@ -87,14 +97,13 @@ three three three
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
             ['Task', 'Hours per Day'],
-            ['Work', 8],
-            ['Sleep', 8],
-            ['Eat', 2],
-            ['Exercise', 2]
+            ['Cocal', 65],
+            ['Contractional', 35],
+            ['Long-term', 5],
         ]);
 
         var options = {
-            title: 'My Daily Activities'
+            title: 'The percentage effects of each type of scours'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
