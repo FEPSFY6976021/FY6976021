@@ -42,6 +42,35 @@
     margin: 0 0 1em 0;
   }
 </style>
+
+<style>
+    .paragraph-with-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.paragraph-with-image img {
+    width: 280px;
+    max-width: 40%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .paragraph-with-image {
+        flex-direction: column;
+    }
+
+    .paragraph-with-image img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+</style>
+
+
+
     
 </head>
 
@@ -114,15 +143,25 @@
 </div>
 
 
+<!--     <img src="WebBanner2026.png" alt="banner" width="1200" height="300">   -->
+    
+<div class="paragraph-with-image">
+    <p>
+        Local scour is the removal of sediment around a bridge pier. It can expose
+        the foundation and affect the bridge’s structural integrity.
+    </p>
+    <img src="local-scour.jpg" alt="Scour forming around a bridge pier">
+</div>
+
+
+
     
 <title>The percentage effects of each type of scours</title>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
 <div id="chart_div" style="width: 900px; height: 600px;"></div>
 <script type="text/javascript">
     google.charts.load('current', { packages: ['corechart'] });
-    google.charts.setOnLoadCallback(drawChart);
-
+    google.charts.setOnLoadCallback(drawChart); 
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
             ['Task', 'Hours per Day'],
