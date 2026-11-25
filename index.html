@@ -59,7 +59,7 @@
             <th><h3>Content</h3></th>
         </tr>
         <tr>
-            <td><a href="#Abstract">Abstract</a></td>
+            <td><a href="#Scours">Scours</a></td>
         </tr>
         <tr>
             <td><a href="#Introduction">Introduction</a></td>
@@ -92,8 +92,8 @@ one
     
 
 
-<h3 id="Analysis and discussion">Analysis and discussion</h3>
-<div id="Analysis_InText" class="section-text">
+<h3 id="Scours">Scours</h3>
+<div id="Scour_InText" class="section-text">
     <p>As bridges are made to be able to hold a large sum of weight, the pillars what are the main support of the bridges must be very durable to be able to maintain its strength and withstand erosion caused by the movement or sediment in the water. 
         The most common reasons bridges fail is due to the scouring. Scouring is the removal of sediment from the banks of the floor and It can have huge effects of bridges structural integrity. A recent example of a bridge that collapses due to scouring is the Tadcaster bridge in North Yorkshire. There are 3 types: local, contractional and long-term.</p>
     
@@ -236,10 +236,10 @@ four four four four
     // Calculate word count for each section and accumulate the total
     const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const ScoursCount = displayWordCount("Scours_InText");
     const ReferenceCount = displayWordCount("Reference_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount+ReferenceCount+AbstractCount;
+    const totalWordCount = IntroductionCount + scoursCount+ReferenceCount+AbstractCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
