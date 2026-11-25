@@ -117,7 +117,7 @@
 <title>The percentage effects of each type of scours</title>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<div id="chart_div"></div>
+<div id="chart_div" style="width: 900px; height: 600px;"></div>
 <script type="text/javascript">
     google.charts.load('current', { packages: ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
@@ -131,6 +131,8 @@
         ]);
         var options = {
             title: 'The percentage effects of each type of scours'
+            width: 900,
+            height: 600          
         };
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
