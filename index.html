@@ -210,7 +210,12 @@
             title: 'The percentage effects of each type of scours',
             width: 900,
             height: 600,
-            backgroundColor: '#D3EEFF'
+            backgroundColor: '#D3EEFF',
+            pieSliceTextStyle: {
+            fontSize: 20,      
+            bold: true,        
+            color: 'white'     
+            }
         };
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
